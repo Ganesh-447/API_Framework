@@ -1,0 +1,33 @@
+import requests
+import pytest
+
+from src.constants.api_constants import create_auth,patch_put_delete,create_booking
+from src.helpers.api_request_wrapper import post_request,put_request,delete_request
+from src.helpers.utils import common_header_json
+from src.helpers.payload_manager import payload_auth,payload_create_booking,payload_update_booking
+from src.helpers.common_verfication import verify_http_code,verify_json_key_not_null,verify_response,verify_single_field
+
+
+
+
+@pytest.fixture(scope="class")
+def token():
+    token_response = post_request(url=create_auth(), auth=None, headers=common_header_json(), payload=payload_auth())
+    verify_http_code(token_response, 200)
+    verify_response(token_response)
+    # print(token_response.json()["token"])
+    token = token_response.json()["token"]
+    verify_json_key_not_null(token)
+    #print(token)
+    return token
+
+@pytest.fixture(scope="class")
+def booking_id():
+    create_response = post_request(url=create_booking(), auth=None, headers=common_header_json(),
+                                   payload=payload_create_booking())
+    # print(create_response)
+    verify_http_code(create_response, 200)
+    booking_id = create_response.json()["bookingid"]
+    verify_json_key_not_null(booking_id)
+    print(f"your data is created with the following details {create_response.json()}\n")
+    return booking_id
