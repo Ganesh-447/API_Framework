@@ -6,7 +6,6 @@
 # for i in a:
 #     if i.isalpha():
 #         if count % 2==0:
-#
 #             result += i.upper()
 #         else:
 #             result += i.lower()
@@ -15,6 +14,24 @@
 #         result += i
 # print(result)
 
-while True:
-    print(f'India❤️')
-    print("\u266B")
+# a = "Ganesh Grandhi Ankarao"
+# result = ""
+# count = 0
+# for i in a:
+#     if i.isalpha():
+#         if count % 3 == 0:
+#             result += i.upper()
+#         else:
+#             result += i.lower()
+#
+#         count += 1
+#     else:
+#         result += i
+# print(result)
+
+
+
+a = "JAI SRIRAM"
+count = 0
+result =""
+

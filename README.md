@@ -14,6 +14,11 @@ How to Install Packages
 ``pip install requests pytest pytest-html faker allure-pytest``
 
 
+#To run the test cases parellel
+
+``pip install pytest-xdist``
+
+
 
 
 

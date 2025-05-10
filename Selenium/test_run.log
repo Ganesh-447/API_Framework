@@ -1,0 +1,34 @@
+2025-05-09 16:26:27 - selenium.webdriver.common.selenium_manager - DEBUG - Selenium Manager binary found at: /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager
+2025-05-09 16:26:27 - selenium.webdriver.common.selenium_manager - DEBUG - Executing process: /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --language-binding python --output json
+2025-05-09 16:26:27 - selenium.webdriver.common.selenium_manager - DEBUG - chromedriver not found in PATH
+2025-05-09 16:26:27 - selenium.webdriver.common.selenium_manager - DEBUG - chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2025-05-09 16:26:27 - selenium.webdriver.common.selenium_manager - DEBUG - Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+2025-05-09 16:26:27 - selenium.webdriver.common.selenium_manager - DEBUG - Output: "Google Chrome 135.0.7049.117 "
+2025-05-09 16:26:27 - selenium.webdriver.common.selenium_manager - DEBUG - Detected browser: chrome 135.0.7049.117
+2025-05-09 16:26:27 - selenium.webdriver.common.selenium_manager - DEBUG - Required driver: chromedriver 135.0.7049.114
+2025-05-09 16:26:27 - selenium.webdriver.common.selenium_manager - DEBUG - chromedriver 135.0.7049.114 already in the cache
+2025-05-09 16:26:27 - selenium.webdriver.common.selenium_manager - DEBUG - Driver path: /Users/apple/.cache/selenium/chromedriver/mac-arm64/135.0.7049.114/chromedriver
+2025-05-09 16:26:27 - selenium.webdriver.common.selenium_manager - DEBUG - Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2025-05-09 16:26:27 - selenium.webdriver.common.service - DEBUG - Started executable: `/Users/apple/.cache/selenium/chromedriver/mac-arm64/135.0.7049.114/chromedriver` in a child process with pid: 32023 using 0 to output -3
+2025-05-09 16:26:27 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:52801/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', 'args': []}}}}
+2025-05-09 16:26:27 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:52801
+2025-05-09 16:26:28 - urllib3.connectionpool - DEBUG - http://localhost:52801 "POST /session HTTP/1.1" 200 0
+2025-05-09 16:26:28 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"135.0.7049.117","chrome":{"chromedriverVersion":"135.0.7049.114 (63fd8a7d9d09e41ba37b84386c85d5f249f848f7-refs/branch-heads/7049@{#2175})","userDataDir":"/var/folders/0j/s45w43_x4gsbr3c_lk8_ykgm0000gn/T/.org.chromium.Chromium.TJWsm7"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:52806"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"4c58064e531173ac2b9c81d313f02a7f"}} | headers=HTTPHeaderDict({'Content-Length': '892', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-09 16:26:28 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2025-05-09 16:26:28 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:52801/session/4c58064e531173ac2b9c81d313f02a7f/window/maximize {}
+2025-05-09 16:26:28 - urllib3.connectionpool - DEBUG - http://localhost:52801 "POST /session/4c58064e531173ac2b9c81d313f02a7f/window/maximize HTTP/1.1" 200 0
+2025-05-09 16:26:28 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":{"height":900,"width":1440,"x":0,"y":0}} | headers=HTTPHeaderDict({'Content-Length': '49', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-09 16:26:28 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2025-05-09 16:26:28 - selenium.webdriver.remote.remote_connection - DEBUG - POST http://localhost:52801/session/4c58064e531173ac2b9c81d313f02a7f/url {'url': 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'}
+2025-05-09 16:26:38 - urllib3.connectionpool - DEBUG - http://localhost:52801 "POST /session/4c58064e531173ac2b9c81d313f02a7f/url HTTP/1.1" 200 0
+2025-05-09 16:26:38 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-09 16:26:38 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2025-05-09 16:26:40 - selenium.webdriver.remote.remote_connection - DEBUG - GET http://localhost:52801/session/4c58064e531173ac2b9c81d313f02a7f/title {}
+2025-05-09 16:26:40 - urllib3.connectionpool - DEBUG - http://localhost:52801 "GET /session/4c58064e531173ac2b9c81d313f02a7f/title HTTP/1.1" 200 0
+2025-05-09 16:26:40 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":"OrangeHRM"} | headers=HTTPHeaderDict({'Content-Length': '21', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-09 16:26:40 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2025-05-09 16:26:40 - selenium.webdriver.remote.remote_connection - DEBUG - GET http://localhost:52801/session/4c58064e531173ac2b9c81d313f02a7f/title {}
+2025-05-09 16:26:40 - urllib3.connectionpool - DEBUG - http://localhost:52801 "GET /session/4c58064e531173ac2b9c81d313f02a7f/title HTTP/1.1" 200 0
+2025-05-09 16:26:40 - selenium.webdriver.remote.remote_connection - DEBUG - Remote response: status=200 | data={"value":"OrangeHRM"} | headers=HTTPHeaderDict({'Content-Length': '21', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-05-09 16:26:40 - selenium.webdriver.remote.remote_connection - DEBUG - Finished Request
+2025-05-09 16:26:40 - Selenium.test_selenium1 - INFO - OrangeHRM

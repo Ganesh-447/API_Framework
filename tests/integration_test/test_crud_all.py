@@ -11,7 +11,7 @@ from tests.integration_test.conftest import token,booking_id
 class TestCrud:
 
     def test_create_token(self,token):
-        print(f'token{token}')
+        print(f'token {token}')
 
     def test_create_booking(self,booking_id):
         print(f'booking_id is {booking_id}')
