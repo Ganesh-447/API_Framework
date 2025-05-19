@@ -6,4 +6,6 @@ if n == 0:
 if n%2 == 0:
     print(f'its even')
 else:
-    print('its is odd')
+    print(f'it is odd')
+
+
